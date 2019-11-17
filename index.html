@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Tokenizer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Tokenize Your Pad</h1>
+        <hr>
+        <p style="text-align: center;">Buy and Sell Real Estate verifiably with Real Estate Tokenizer.</p>
+    </div>
+
+    <div id="ftc-Tokenize">
+        <h2>Tokenize</h2>
+        <div class="form-group">
+            Property Number
+            <br>
+            <input class="input-field" type="number" id="propertyNumber" name="propertyNumber" value=1><br>
+            
+            <div class=button-div>
+                <button class="btn-fetchOne" id="button" type="button" data-id="1">Tokenize!</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="src/js/truffle-contract.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>
